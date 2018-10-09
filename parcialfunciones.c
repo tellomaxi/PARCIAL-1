@@ -341,7 +341,7 @@ void funcion_ordenarClientesXNombre(eCliente list[], int tam)
                 }
             }
         }
-        printf("Empleados oredenados de forma ascendente\n\n");
+        printf("Empleados ordenados de forma ascendente\n\n");
         break;
     case 2:
         for(int i=0; i<tam-1; i++)
@@ -349,7 +349,7 @@ void funcion_ordenarClientesXNombre(eCliente list[], int tam)
             for(int j= i+1; j < tam; j++)
             {
 
-                if( list[i].nombre < list[j].nombre)
+                if( list[i].sexo < list[j].sexo)
                 {
                     auxCliente = list[i];
                     list[i] = list[j];
@@ -358,7 +358,7 @@ void funcion_ordenarClientesXNombre(eCliente list[], int tam)
                 }
             }
         }
-        printf("Clientes oredenados de forma descendente\n\n");
+        printf("Clientes ordenados de forma descendente\n\n");
         break;
     }
 
